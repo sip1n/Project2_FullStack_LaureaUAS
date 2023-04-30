@@ -12,23 +12,6 @@ The following **technologies** were used to develop this application:
 
 ---
 
-### TODO
-
-- [x] Signup and login
-- [x] Password hashing (bcrypt)
-- [x] Authorization token (jsonwebtoken)
-- [ ] Implement refresh token 
-- [x] Get all channels
-- [x] Create channel
-- [x] Edit channel
-- [ ] Join channel
-- [ ] Send message to channel
-- [ ] Edit message
-- [ ] Delete message
-- [ ] Chill and drink sihijuoma
-
----
-
 ### Getting Started
 
 To get started with the application, follow these steps:
@@ -41,6 +24,24 @@ MONGODB_URI=mongodb+srv://<username>:<password>@<your_mongoDB_cluster>
 JWT_SECRET=<YOUR_SECRET>
 ```
 4. Start the server using ``npm start``.
+
+---
+
+### TODO
+
+- [x] Signup and login
+- [x] Password hashing (bcrypt)
+- [x] Authorization token (jsonwebtoken)
+- [ ] Implement refresh token 
+- [x] Get all channels
+- [x] Create channel
+- [x] Edit channel
+- [x] Delete channel
+- [ ] Join channel
+- [ ] Send message to channel
+- [ ] Edit message
+- [ ] Delete message
+- [ ] Chill and drink sihijuoma
 
 ---
 
