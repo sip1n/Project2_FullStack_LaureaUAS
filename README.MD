@@ -8,7 +8,7 @@ This is a **multichannel messaging application** that enables users to communica
 
 The following **technologies** were used to develop this application:
 
-| **Node.js** | **Express** | **MongoDB** | **Mongoose** | **Bcrypt** | **Jsonwebtoken** | **Dotenv** |
+| **Node.js** | **Express** | **MongoDB** | **Mongoose** | **bcrypt** | **jsonwebtoken** | **Dotenv** | **cookie-parser** |
 
 ---
 

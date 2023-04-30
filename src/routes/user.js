@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
+const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const verifyToken = require('../middleware/verifyToken');
 const User = require('../models/userModel');

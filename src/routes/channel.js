@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const cookieParser = require('cookie-parser');
 const Channel = require('../models/channelModel');
 const User = require('../models/userModel');
 const verifyToken = require('../middleware/verifyToken');
