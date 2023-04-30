@@ -16,9 +16,12 @@ The following **technologies** were used to develop this application:
 
 - [x] Signup and login
 - [x] Password hashing (bcrypt)
-- [x] Authorization check (jsonwebtoken)
+- [x] Authorization token (jsonwebtoken)
+- [ ] Implement refresh token 
+- [x] Get all channels
 - [x] Create channel
-- [ ] Get all channels
+- [x] Edit channel
+- [ ] Join channel
 - [ ] Send message to channel
 - [ ] Edit message
 - [ ] Delete message
@@ -33,6 +36,10 @@ To get started with the application, follow these steps:
 1. Clone the repository to your local machine.
 2. Install the required dependencies using ``npm install``.
 3. Set up your environment variables by creating a `.env` file in the root directory of the project and adding your configuration values.
+´´´
+MONGODB_URI=mongodb+srv://<username>:<password>@<your_mongoDB_cluster>
+JWT_SECRET=<YOUR_SECRET>
+´´´
 4. Start the server using ``npm start``.
 
 ---

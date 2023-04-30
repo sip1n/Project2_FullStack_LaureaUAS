@@ -1,11 +1,11 @@
 require('dotenv').config();
 const express = require('express');
+
 const db = require('./db');
-const user = require('./models/user');
-const signupRoutes = require('./routes/signup');
-const loginRoutes = require('./routes/login');
-const meRoutes = require('./routes/user');
-const newChannelRoutes = require('./routes/createChannel');
+const user = require('./models/userModel');
+
+const userRoutes = require('./routes/user');
+const channelRoutes = require('./routes/channel');
 
 const app = express();
 
@@ -13,20 +13,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-//-- USER ROUTES / account creation, authentication, user info --//
+// User route
+app.use('/api/users', userRoutes);
 
-// Signup
-app.use('/api/users', signupRoutes);
-
-// Login
-app.use('/api/users/login', loginRoutes); 
-
-// User info
-app.use('/api/users/me', meRoutes); 
-
-// Create channel
-app.use('/api/channels', newChannelRoutes)
-
+// Channel route
+app.use('/api/channels', channelRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
@@ -38,11 +29,6 @@ app.listen(PORT, () => {
 
 //-- CHANNEL ROUTES / create channel, get all channels, channel info --//
 
-
-// GET ALL CHANNELS
-app.get('/api/channels', (req, res) => {
-  // Implement logic for retrieving information about all chat channels
-});
 
 // CHANNEL INFO
 app.get('/api/channels/:id', (req, res) => {
