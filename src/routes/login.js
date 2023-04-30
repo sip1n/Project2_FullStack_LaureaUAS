@@ -26,7 +26,16 @@ router.post('/', async (req, res) => {
       process.env.JWT_SECRET,
       { expiresIn: '1d' }
     );
+
+
+    // Set cookie with JWT token
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: 'strict'
+    });
     
+
     console.log(`Generated token: ${token}`);
 
     // Return success response

@@ -5,6 +5,7 @@ const user = require('./models/user');
 const signupRoutes = require('./routes/signup');
 const loginRoutes = require('./routes/login');
 const meRoutes = require('./routes/user');
+const newChannelRoutes = require('./routes/createChannel');
 
 const app = express();
 
@@ -23,6 +24,8 @@ app.use('/api/users/login', loginRoutes);
 // User info
 app.use('/api/users/me', meRoutes); 
 
+// Create channel
+app.use('/api/channels', newChannelRoutes)
 
 
 app.listen(PORT, () => {

@@ -1,5 +1,11 @@
-// CREATE CHANNEL
-router.post('/', async (req, res) => {
+const express = require('express');
+const router = express.Router();
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const Channel = require('../models/channel');
+const verifyToken = require('../middleware/verifyToken');
+
+router.post('/', verifyToken, async (req, res) => {
   try {
     const { name, description } = req.body;
     const createdBy = req.user.userId;
@@ -22,3 +28,5 @@ router.post('/', async (req, res) => {
     res.status(500).json({ message: 'Internal server error' });
   }
 });
+
+module.exports = router;
