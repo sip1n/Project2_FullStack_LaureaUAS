@@ -1,6 +1,6 @@
 # Multichannel Messaging App 
 
-This is a **multichannel messaging application** that enables users to communicate through various channels, including SMS, email, and social media platforms.
+This is a **multichannel messaging application** that enables users to communicate through different channels.
 
 ---
 
