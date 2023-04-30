@@ -1,5 +1,5 @@
 // CREATE CHANNEL
-router.post('/channels', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const { name, description } = req.body;
     const createdBy = req.user.userId;
