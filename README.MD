@@ -17,7 +17,8 @@ The following **technologies** were used to develop this application:
 - [x] Signup and login
 - [x] Password hashing (bcrypt)
 - [x] Authorization check (jsonwebtoken)
-- [ ] Create channel and get all channels
+- [x] Create channel
+- [ ] Get all channels
 - [ ] Send message to channel
 - [ ] Edit message
 - [ ] Delete message
