@@ -38,9 +38,11 @@ JWT_SECRET=<YOUR_SECRET>
 - [x] Edit channel
 - [x] Delete channel
 - [ ] Join channel
+- [ ] Leave channel
 - [ ] Send message to channel
 - [ ] Edit message
 - [ ] Delete message
+- [ ] Input validation
 - [ ] Chill and drink sihijuoma
 
 ---
