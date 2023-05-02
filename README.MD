@@ -4,7 +4,7 @@ This is a **multichannel messaging application** that enables users to communica
 
 ---
 
-### Technologies Used
+## Technologies Used
 
 The following **technologies** were used to develop this application:
 
@@ -12,7 +12,7 @@ The following **technologies** were used to develop this application:
 
 ---
 
-### Getting Started
+## Getting Started
 
 To get started with the application, follow these steps:
 
@@ -39,7 +39,7 @@ Connected to MongoDB
 
 Routes currently in developemental working state
 
-**/api/users/signup**
+#### **/api/users/signup**
 
 POST 
 
@@ -66,7 +66,7 @@ Output:
 }
 ```
 
-**/api/users/login**
+#### **/api/users/login**
 
 POST 
 
@@ -99,7 +99,7 @@ token=<YOUR_GENERATED_JWT_TOKEN>; Path=/; Secure; HttpOnly;
 }
 ```
 
-/api/users/me
+#### **/api/users/me**
 
 **GET**
 
@@ -125,7 +125,7 @@ Output:
 }
 ```
 
-/api/channel
+#### **/api/channel**
 
 **GET**
 Get all channels that have been created from MongoDB /channels/ collection
@@ -198,7 +198,7 @@ Output:
 }
 ```
 
-/api/channel/:id
+#### **/api/channel/:id**
 
 **GET**
 Get channel info based on `<UNIQUE_CHANNEL_ID>`
