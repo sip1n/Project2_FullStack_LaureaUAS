@@ -288,7 +288,7 @@ Output:
 
 ---
 
-### TODO
+## TODO
 
 - [x] Signup and login
 - [x] Password hashing (bcrypt)
@@ -308,7 +308,7 @@ Output:
 
 ---
 
-### License
+## License
 
 This project is licensed under the **ISC License** - see [`https://www.isc.org/licenses/`](https://www.isc.org/licenses/) for more info about licence.
 
