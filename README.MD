@@ -4,9 +4,9 @@ This is a **multichannel messaging application** that enables users to communica
 
 ---
 
-## Technologies Used
+## Magic Used
 
-The following **technologies** were used to develop this application:
+The following **packages** were used to develop this application:
 
 | **Node.js** | **Express** | **MongoDB** | **Mongoose** | **bcrypt** | **jsonwebtoken** | **Dotenv** | **cookie-parser** |
 
